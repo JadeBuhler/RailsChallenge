@@ -14,6 +14,9 @@
   </thead>
 
   <tbody>
+    <p>Number of products: <%=@count%></p>
+    <p>Average price of products: <%=@avgPrice%></p>
+    <p>Stock quantity of all items: <%=@stockQuantity%></p>
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
@@ -31,6 +34,8 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+</p>
 
 <%100.times do %>
   <p>Chunky Bacon</p>
